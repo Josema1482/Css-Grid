@@ -89,6 +89,29 @@ body {
     writing-mode: vertical-lr;
 
 }
-/*place-self: une align-self y justify-self*/
-/*   direction: rtl;
-  writing-mode: vertical-rl; */
+/*
+place-self: une align-self y justify-self
+
+direction: rtl;
+writing-mode: vertical-rl;
+
+
+ej: en las filas poner minmax(1fr, auto) 300px(esta es otra fila)
+el auto es para que crezcan automaticamente
+
+columnas poner grid-template-columns: repeat(3, 1fr) 200px
+filas poner grid-template-rows: repeat(4, 200px) 300px 1fr
+
+grid-template-colums: minmax(180px, 1fr) 500px
+grid-template-rows: minmax(200px, auto) 400px 
+
+grid-template-columns: repeat(auto-fill ó fit, minmax(100px, 1fr));
+aca no hay que indicar la cantidad de columnas toma automaticamente
+por ejemplo los divs indicados en un contenedor
+
+grid-template-columns: repeat(4, minmax(100px, 1fr));
+
+grid-template-columns: [linename1] 100px [linename2 linename3]; se nombran
+
+*/
+
